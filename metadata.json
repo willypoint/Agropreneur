@@ -1,0 +1,6 @@
+{
+  "name": "Agropreneur - Platform Bisnis & Simulasi Finansial Pertanian",
+  "description": "Platform modern wirausaha tani: katalog komoditas, simulator finansial (Capex/Opex/ROI/BEP), pantauan harga pasar, dan SOP budidaya terpadu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

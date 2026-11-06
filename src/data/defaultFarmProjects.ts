@@ -1,0 +1,171 @@
+import { FarmProject } from '../types';
+
+export const DEFAULT_FARM_PROJECTS: FarmProject[] = [
+  {
+    id: 'farm-proj-1',
+    name: 'Kebun Cabai Rawit Ori 212 - Blok Barat',
+    commodityName: 'Cabai Rawit Merah',
+    plantingDate: '2026-09-15',
+    targetHarvestDate: '2026-12-10',
+    landAreaM2: 1000,
+    projectedBudget: 9800000,
+    projectedYieldKg: 1200,
+    status: 'Pemeliharaan',
+    costs: [
+      {
+        id: 'c-101',
+        date: '2026-09-10',
+        category: 'Benih & Persemaian',
+        amount: 850000,
+        note: 'Beli 4 bungkus benih Ori 212 + tray semai & cocopeat',
+      },
+      {
+        id: 'c-102',
+        date: '2026-09-12',
+        category: 'Alat & Bahan Olah Lahan',
+        amount: 1400000,
+        note: 'Plastik mulsa hitam perak 800m + kapur dolomit 300kg',
+      },
+      {
+        id: 'c-103',
+        date: '2026-09-14',
+        category: 'Tenaga Kerja',
+        amount: 1800000,
+        note: 'Upah borongan buat bedengan & pasang mulsa (4 orang x 3 hari)',
+      },
+      {
+        id: 'c-104',
+        date: '2026-09-28',
+        category: 'Pupuk Dasar & Kocor',
+        amount: 920000,
+        note: 'Pupuk kandang kambing fermentasi 40 karung + NPK Mutiara 16-16-16',
+      },
+      {
+        id: 'c-105',
+        date: '2026-10-10',
+        category: 'Pengendalian Hama & Penyakit',
+        amount: 650000,
+        note: 'Insektisida bahan aktif Abamektin (cegah thrips) + Perekat perata',
+      },
+      {
+        id: 'c-106',
+        date: '2026-10-25',
+        category: 'Tenaga Kerja',
+        amount: 750000,
+        note: 'Pemasangan bambu ajir penopang tanaman & wiwil tunas air',
+      },
+    ],
+    logs: [
+      {
+        id: 'log-101',
+        date: '2026-09-15',
+        activity: 'Monitoring',
+        note: 'Pindah tanam bibit umur 25 HSS pada sore hari. Kondisi bibit segar, bedengan sudah disiram jenuh.',
+      },
+      {
+        id: 'log-102',
+        date: '2026-09-22',
+        activity: 'Penyiraman',
+        note: 'Penyiraman pagi hari via selang drip irigasi selama 45 menit. Tanah lembap merata.',
+      },
+      {
+        id: 'log-103',
+        date: '2026-09-29',
+        activity: 'Pemupukan',
+        note: 'Kocor pertama NPK 16-16-16 dosis 3 gram/tanaman dilarutkan ke drum 200 liter.',
+      },
+      {
+        id: 'log-104',
+        date: '2026-10-12',
+        activity: 'Pengendalian Hama',
+        note: 'Ditemukan gejala daun keriting akibat tungau/thrips di baris 3. Penyemprotan sore hari dengan Abamektin.',
+      },
+      {
+        id: 'log-105',
+        date: '2026-10-28',
+        activity: 'Monitoring',
+        note: 'Tanaman masuk fase berbunga lebat (generatif awal). Dilakukan kocor pupuk MKP + Kalsium Nitrat untuk cegah rontok bunga.',
+      },
+    ],
+  },
+  {
+    id: 'farm-proj-2',
+    name: 'Greenhouse Selada Romaine NFT - Siklus 3',
+    commodityName: 'Selada Hidroponik',
+    plantingDate: '2026-08-01',
+    targetHarvestDate: '2026-09-08',
+    landAreaM2: 250,
+    projectedBudget: 4200000,
+    projectedYieldKg: 650,
+    status: 'Selesai',
+    costs: [
+      {
+        id: 'c-201',
+        date: '2026-07-28',
+        category: 'Benih & Rockwool',
+        amount: 380000,
+        note: 'Benih Selada Romaine bejo seed + 1 slab rockwool culene',
+      },
+      {
+        id: 'c-202',
+        date: '2026-08-01',
+        category: 'Nutrisi Hidroponik (AB Mix)',
+        amount: 850000,
+        note: 'AB Mix Sayuran Daun pekatan 5 liter x 2 set',
+      },
+      {
+        id: 'c-203',
+        date: '2026-08-15',
+        category: 'Listrik & Pompa Air',
+        amount: 450000,
+        note: 'Token listrik pompa sirkulasi 24 jam x 40 hari',
+      },
+      {
+        id: 'c-204',
+        date: '2026-08-25',
+        category: 'Tenaga Kerja',
+        amount: 800000,
+        note: 'Upah pemeliharaan harian, cek EC/PPM, & kebersihan talang',
+      },
+      {
+        id: 'c-205',
+        date: '2026-09-05',
+        category: 'Kemasan & Distribusi',
+        amount: 620000,
+        note: 'Plastik OPP sayur berpori stiker branding + sewa motor boks',
+      },
+    ],
+    logs: [
+      {
+        id: 'log-201',
+        date: '2026-08-01',
+        activity: 'Monitoring',
+        note: 'Pindah bibit 14 HSS dari meja semai ke instalasi talang NFT. PPM air disetel 600.',
+      },
+      {
+        id: 'log-202',
+        date: '2026-08-15',
+        activity: 'Pemupukan',
+        note: 'Penaikan kepekatan nutrisi bertahap ke PPM 1.100. pH stabil di 6.2.',
+      },
+      {
+        id: 'log-203',
+        date: '2026-08-28',
+        activity: 'Pengendalian Hama',
+        note: 'Pasang yellow sticky trap baru. Tidak ditemukan ulat grayak.',
+      },
+      {
+        id: 'log-204',
+        date: '2026-09-07',
+        activity: 'Monitoring',
+        note: 'Fase panen penuh. Krop padat, bobot rata-rata 180 gram/pokok. Kondisi daun hijau renyah.',
+      },
+    ],
+    actualHarvest: {
+      harvestDate: '2026-09-08',
+      actualYieldKg: 710, // Melampaui target rencana 650 kg (+9.2%)
+      sellingPricePerKg: 24000, // Kontrak suplai resto salad & supermarket
+      actualRevenue: 17040000,
+    },
+  },
+];
